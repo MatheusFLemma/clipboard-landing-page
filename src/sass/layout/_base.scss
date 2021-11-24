@@ -13,6 +13,28 @@ $semi-bold: 600;
   #{$property}: ($px / 16) + rem;
 }
 
+@mixin textCenter {
+  text-align: center;
+}
+
+@mixin marginAll($top, $right, $bottom, $left) {
+  margin: ($top / 16) + rem, ($right / 16) + rem, ($bottom / 16) + rem, ($left / 16) + rem;
+}
+
+@mixin marginBottom($value) {
+  margin-bottom: ($value / 16) + rem;
+}
+
+@mixin paddingTopBottom($top, $bottom) {
+  padding-top: ($top / 16) + rem;
+  padding-bottom: ($bottom / 16) + rem;
+}
+
+@mixin marginRightLeft($right, $left) {
+  margin-right: ($right / 16) + rem;
+  margin-left: ($left / 16) + rem;
+}
+
 *,
 *::after,
 *::before {
@@ -59,8 +81,7 @@ p {
 }
 
 .container {
-  @include toRem(margin-left, 65);
-  @include toRem(margin-right, 65);
+  @include marginRightLeft(65, 65);
 
   display: flex;
   flex-direction: column;

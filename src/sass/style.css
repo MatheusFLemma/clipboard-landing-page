@@ -41,8 +41,8 @@ p {
 }
 
 .container {
-  margin-left: 4.0625rem;
   margin-right: 4.0625rem;
+  margin-left: 4.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,5 +133,35 @@ p {
 
 .btn__Mac:hover {
   background: #8896FE;
+}
+
+.l-section-a {
+  padding-top: 1.75rem;
+}
+
+.l-section-a__container {
+  text-align: center;
+}
+
+.l-section-a__title {
+  margin-bottom: 1rem;
+}
+
+.l-section-a__text {
+  margin-bottom: 3.3125rem;
+}
+
+.l-section-a__computer {
+  margin-bottom: 2.875rem;
+  width: 100%;
+}
+
+.l-section-a__feature {
+  margin-bottom: 2.4375rem;
+  text-align: center;
+}
+
+.l-section-a__subtitle {
+  margin-bottom: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.l-section-a {
+  @include toRem(padding-top, 28);
+
+  &__container {
+    @include textCenter;
+  }
+
+  &__title {
+    @include marginBottom(16);
+  }
+  
+  &__text {
+    @include marginBottom(53);
+  }
+
+  &__computer {
+    @include marginBottom(46);
+
+    width: 100%;
+  }
+
+  &__feature {
+    @include marginBottom(39);
+    @include textCenter;
+  }
+
+  &__subtitle {
+    @include marginBottom(8);
+  }
+}

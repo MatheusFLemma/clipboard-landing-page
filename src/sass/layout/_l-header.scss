@@ -1,6 +1,5 @@
 .l-header {
-  @include toRem(padding-top, 100);
-  @include toRem(padding-bottom, 100);
+  @include paddingTopBottom(100, 100);
   
   background: url(/src/images/bg-header-mobile.png) no-repeat center top ;
 
@@ -11,12 +10,12 @@
 
   &__title {
     @include toRem(margin-bottom, 16);
-    text-align: center;
+    @include textCenter;
   }
   
   &__text {
     @include toRem(margin-bottom, 36);
-    text-align: center;
+    @include textCenter;
   }
 
   &__container--btn {
