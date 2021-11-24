@@ -1,0 +1,37 @@
+.btn {
+  @include toRem(padding-top, 8);
+  @include toRem(padding-bottom, 8);
+  @include toRem(border-radius, 30);
+  @include toRem(font-size, 16);
+
+  color: #FFF;
+  font-weight: $semi-bold;
+
+  @media screen and (min-width: 992px) {
+    @include toRem(max-width, 227);
+  }
+
+  &__iOS {
+    @include toRem(margin-bottom, 18);
+
+    background: $strong-cyan;
+    box-shadow: 0px 2px 15px rgba(38, 187, 164, 0.5), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background linear .2s;
+    
+    &:hover {
+      background: $strong-cyan-hover;
+    }
+  }
+
+  &__Mac {
+    background: $light-blue;
+    box-shadow: 0px 2px 15px rgba(97, 115, 255, 0.5), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background linear .2s;
+    
+    &:hover {
+      background: $light-blue-hover;
+    }
+  }
+}

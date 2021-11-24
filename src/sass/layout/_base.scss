@@ -1,0 +1,72 @@
+$dark-grayish-blue: #4C545D;
+$grayish-blue: #9FABB2;
+$strong-cyan: #26BAA4;
+$strong-cyan-hover: #5DCCBB;
+$light-blue: #6173FF;
+$light-blue-hover: #8896FE;
+
+$font: 'Bai Jamjuree', sans-serif;
+$regular: 400;
+$semi-bold: 600;
+
+@mixin toRem($property, $px) {
+  #{$property}: ($px / 16) + rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+html,
+body {
+  scroll-behavior: smooth
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  @include toRem(font-size, 24);
+
+  font-weight: $semi-bold;
+  color: $dark-grayish-blue;
+}
+
+h2 {
+  @include toRem(font-size, 21);
+  
+  font-weight: $semi-bold;
+  color: $dark-grayish-blue;
+}
+
+h3 {
+  @include toRem(font-size, 18);
+  
+  font-weight: $semi-bold;
+  color: $dark-grayish-blue;
+}
+
+p {
+  @include toRem(font-size, 12);
+
+  color: $grayish-blue
+}
+
+.container {
+  @include toRem(margin-left, 65);
+  @include toRem(margin-right, 65);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 992px) {
+    @include toRem(max-width, 992);
+  }
+}
