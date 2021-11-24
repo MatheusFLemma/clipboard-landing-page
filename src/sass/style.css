@@ -164,4 +164,40 @@ p {
 .l-section-a__subtitle {
   margin-bottom: 0.5rem;
 }
+
+.l-section-b {
+  padding-top: 6.25rem;
+  padding-bottom: 0.0625rem;
+}
+
+.l-section-b__container {
+  text-align: center;
+}
+
+.l-section-b__title {
+  margin-bottom: 1rem;
+}
+
+.l-section-b__text {
+  margin-bottom: 2.8125rem;
+}
+
+.l-section-b__device {
+  margin-bottom: 4.8125rem;
+  width: 100%;
+}
+
+.l-section-b__feature {
+  margin-bottom: 2.4375rem;
+  text-align: center;
+}
+
+.l-section-b__icon {
+  margin-bottom: 2rem;
+  margin-top: 2.9375rem;
+}
+
+.l-section-b__subtitle {
+  margin-bottom: 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */

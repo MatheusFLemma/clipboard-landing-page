@@ -1,0 +1,35 @@
+.l-section-b {
+  @include paddingTopBottom(100, 1);
+
+  &__container {
+    @include textCenter;
+  }
+
+  &__title {
+    @include marginBottom(16);
+  }
+  
+  &__text {
+    @include marginBottom(45);
+  }
+
+  &__device {
+    @include marginBottom(77);
+
+    width: 100%;
+  }
+
+  &__feature {
+    @include marginBottom(39);
+    @include textCenter;
+  }
+
+  &__icon {
+    @include marginBottom(32);
+    @include toRem(margin-top, 47);
+  }
+
+  &__subtitle {
+    @include marginBottom(8);
+  }
+}
