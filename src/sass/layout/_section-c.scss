@@ -1,0 +1,21 @@
+.l-section-c {
+  @include paddingTopBottom(64, 64);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__google,
+  &__ibm,
+  &__microsoft,
+  &__hp {
+    @include marginBottom(50);
+  }
+
+  &__google,
+  &__ibm,
+  &__microsoft,
+  &__hp,
+  &__vector-graphics {
+    width: 80%;
+  }
+}

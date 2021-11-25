@@ -1,0 +1,18 @@
+.l-section-d {
+  @include paddingTopBottom(64, 136);
+  @include textCenter;
+
+  &__title {
+    @include marginBottom(16);
+  }
+
+  &__text {
+    @include marginBottom(36);
+  }
+
+  &__container--btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -40,6 +40,18 @@ p {
   color: #9FABB2;
 }
 
+a {
+  font-size: 0.875rem;
+  color: #4C545D;
+  text-decoration: none;
+  -webkit-transition: color linear .1s;
+  transition: color linear .1s;
+}
+
+a:hover {
+  color: #26BAA4;
+}
+
 .container {
   margin-right: 4.0625rem;
   margin-left: 4.0625rem;
@@ -199,5 +211,96 @@ p {
 
 .l-section-b__subtitle {
   margin-bottom: 0.5rem;
+}
+
+.l-section-c {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-section-c__google, .l-section-c__ibm, .l-section-c__microsoft, .l-section-c__hp {
+  margin-bottom: 3.125rem;
+}
+
+.l-section-c__google, .l-section-c__ibm, .l-section-c__microsoft, .l-section-c__hp, .l-section-c__vector-graphics {
+  width: 80%;
+}
+
+.l-section-d {
+  padding-top: 4rem;
+  padding-bottom: 8.5rem;
+  text-align: center;
+}
+
+.l-section-d__title {
+  margin-bottom: 1rem;
+}
+
+.l-section-d__text {
+  margin-bottom: 2.25rem;
+}
+
+.l-section-d__container--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.l-footer {
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background: #F5F6F8;
+}
+
+.l-footer__logo {
+  width: 2.875rem;
+  margin-bottom: 1.75rem;
+}
+
+.l-footer__links {
+  margin-bottom: 2.3125rem;
+}
+
+.l-footer__link--faqs, .l-footer__link--contact-us, .l-footer__link--privacy-policy, .l-footer__link--press-kit {
+  margin-bottom: 0.75rem;
+}
+
+.l-footer__social {
+  margin: 0 auto;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-footer__social svg {
+  fill: #4C545D;
+  -webkit-transition: fill linear .1s;
+  transition: fill linear .1s;
+}
+
+.l-footer__social svg:hover {
+  fill: #26BAA4;
 }
 /*# sourceMappingURL=style.css.map */

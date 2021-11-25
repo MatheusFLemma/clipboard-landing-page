@@ -4,6 +4,7 @@ $strong-cyan: #26BAA4;
 $strong-cyan-hover: #5DCCBB;
 $light-blue: #6173FF;
 $light-blue-hover: #8896FE;
+$footer-color: #F5F6F8;
 
 $font: 'Bai Jamjuree', sans-serif;
 $regular: 400;
@@ -78,6 +79,18 @@ p {
   @include toRem(font-size, 12);
 
   color: $grayish-blue
+}
+
+a {
+  @include toRem(font-size, 14);
+
+  color: $dark-grayish-blue;
+  text-decoration: none;
+  transition: color linear .1s;
+
+  &:hover {
+    color: $strong-cyan;
+  }
 }
 
 .container {
