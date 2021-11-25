@@ -97,6 +97,7 @@ p {
 
 a {
   @include toRem(font-size, 14);
+  display: inline-block;
 
   color: $dark-grayish-blue;
   text-decoration: none;

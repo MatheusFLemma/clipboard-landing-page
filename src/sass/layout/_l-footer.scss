@@ -31,7 +31,10 @@
       @include marginBottom(0);
     }
 
-    ul {
+    section {
+      display: flex;
+      flex-direction: column;
+      
       @media screen and (min-width: 992px) {
         @include marginBottom(0);
         display: grid;
