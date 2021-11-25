@@ -4,11 +4,21 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (min-width: 992px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &__google,
   &__ibm,
   &__microsoft,
   &__hp {
     @include marginBottom(50);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(0);
+    }
   }
 
   &__google,
@@ -17,5 +27,9 @@
   &__hp,
   &__vector-graphics {
     width: 80%;
+    
+    @media screen and (min-width: 992px) {
+      @include toRem(width, 150);
+    }
   }
 }

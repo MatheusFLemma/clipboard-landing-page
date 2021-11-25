@@ -1,18 +1,38 @@
 .l-section-d {
   @include paddingTopBottom(64, 136);
   @include textCenter;
+  
+  @media screen and (min-width: 992px) {
+    @include paddingTopBottom(70, 80);
+  }
 
   &__title {
     @include marginBottom(16);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(18);
+    }
   }
 
   &__text {
     @include marginBottom(36);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(52);
+    }
   }
 
   &__container--btn {
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media screen and (min-width: 992px) {
+      @include toRem(width, 992);
+      
+      flex-direction: row;
+      justify-content: center;
+      
+    }
   }
 }

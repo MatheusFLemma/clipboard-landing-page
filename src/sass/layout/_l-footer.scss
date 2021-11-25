@@ -1,0 +1,73 @@
+.l-footer {
+  @include textCenter;
+  @include paddingTopBottom(40, 40);
+
+  background: $footer-color;
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+  }
+
+  &__logo {
+    @include toRem(width, 46);
+    @include marginBottom(28);
+
+    @media screen and (min-width: 992px) {
+      @include toRem(width, 55);
+      @include marginBottom(0);
+    }
+  }
+
+  &__links {
+    @include marginBottom(37);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(0);
+    }
+
+    ul {
+      @media screen and (min-width: 992px) {
+        @include marginBottom(0);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: start;
+      }
+    }
+  }
+  
+  &__link--faqs,
+  &__link--contact-us,
+  &__link--privacy-policy,
+  &__link--press-kit {
+    @include marginBottom(12);
+  }
+
+  &__social {
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (min-width: 992px) {
+      width: 100%;
+    }
+
+    svg {
+      fill: $dark-grayish-blue;
+      transition: fill linear .1s;
+
+      &:hover {
+        fill: $strong-cyan;
+      }
+    }
+  }
+}

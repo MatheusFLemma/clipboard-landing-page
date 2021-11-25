@@ -59,6 +59,10 @@ h1 {
 
   font-weight: $semi-bold;
   color: $dark-grayish-blue;
+
+  @media screen and (min-width: 992px) {
+    @include toRem(font-size, 45);
+  }
 }
 
 h2 {
@@ -66,19 +70,29 @@ h2 {
   
   font-weight: $semi-bold;
   color: $dark-grayish-blue;
-}
+
+  @media screen and (min-width: 992px) {
+    @include toRem(font-size, 36);
+  }}
 
 h3 {
   @include toRem(font-size, 18);
   
   font-weight: $semi-bold;
   color: $dark-grayish-blue;
-}
+
+  @media screen and (min-width: 992px) {
+    @include toRem(font-size, 24);
+  }}
 
 p {
   @include toRem(font-size, 12);
 
-  color: $grayish-blue
+  color: $grayish-blue;
+
+  @media screen and (min-width: 992px) {
+    @include toRem(font-size, 16);
+  }
 }
 
 a {
@@ -93,6 +107,10 @@ a {
   }
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   @include marginRightLeft(65, 65);
 
@@ -102,5 +120,7 @@ a {
 
   @media screen and (min-width: 992px) {
     @include toRem(max-width, 992);
+    
+    margin: 0 auto;
   }
 }

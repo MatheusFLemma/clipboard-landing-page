@@ -7,10 +7,26 @@
 
   &__title {
     @include marginBottom(16);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(18);
+    }
   }
   
   &__text {
     @include marginBottom(53);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(88);
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    &__information {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center
+    }
   }
 
   &__computer {
@@ -22,6 +38,13 @@
   &__feature {
     @include marginBottom(39);
     @include textCenter;
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(60);
+      @include marginRightLeft(0, 110);
+      
+      text-align: start;
+    }
   }
 
   &__subtitle {

@@ -3,19 +3,35 @@
   
   background: url(/src/images/bg-header-mobile.png) no-repeat top;
   background-size: cover;
+  
+  @media screen and (min-width: 992px) {
+    @include paddingTopBottom(132, 80);
+    
+    background: url(/src/images/bg-header-desktop.png) no-repeat top;
+    background-size: cover;
+  }
 
   &__logo {
-    @include toRem(margin-bottom, 58);
+    @include marginBottom(58);
     @include toRem(width, 90);
+
+    @media screen and (min-width: 992px) {
+      @include marginBottom(62);
+      @include toRem(width, 115);
+    }
   }
 
   &__title {
-    @include toRem(margin-bottom, 16);
+    @include marginBottom(16);
     @include textCenter;
+
+    @media screen and (min-width: 992px) {
+      @include marginBottom(18);
+    }
   }
   
   &__text {
-    @include toRem(margin-bottom, 36);
+    @include marginBottom(36);
     @include textCenter;
   }
 
@@ -23,5 +39,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media screen and (min-width: 992px) {
+      @include toRem(width, 992);
+      
+      flex-direction: row;
+      justify-content: center;
+      
+    }
   }
 }

@@ -1,5 +1,9 @@
 .l-section-b {
   @include paddingTopBottom(100, 1);
+  
+  @media screen and (min-width: 992px) {
+    @include paddingTopBottom(70, 80);
+  }
 
   &__container {
     @include textCenter;
@@ -7,29 +11,67 @@
 
   &__title {
     @include marginBottom(16);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(18);
+    }
   }
   
   &__text {
     @include marginBottom(45);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(106);
+    }
+  }
+
+  #superchargeText {
+    @media screen and (min-width: 992px) {
+      @include marginBottom(74);
+    }
   }
 
   &__device {
     @include marginBottom(77);
 
     width: 100%;
+        
+    @media screen and (min-width: 992px) {
+      @include marginBottom(70);
+    }
+  }
+
+  &__fContainer {
+    @media screen and (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+    }
   }
 
   &__feature {
     @include marginBottom(39);
     @include textCenter;
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(0);
+    }
   }
 
   &__icon {
     @include marginBottom(32);
     @include toRem(margin-top, 47);
+    
+    @media screen and (min-width: 992px) {
+      @include marginBottom(40);
+    }
   }
 
   &__subtitle {
     @include marginBottom(8);
+        
+    @media screen and (min-width: 992px) {
+      @include marginBottom(18);
+    }
   }
 }

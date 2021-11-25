@@ -1,6 +1,5 @@
 .btn {
-  @include toRem(padding-top, 8);
-  @include toRem(padding-bottom, 8);
+  @include paddingTopBottom(8, 8);
   @include toRem(border-radius, 30);
   @include toRem(font-size, 16);
 
@@ -8,11 +7,13 @@
   font-weight: $semi-bold;
 
   @media screen and (min-width: 992px) {
-    @include toRem(max-width, 227);
+    @include paddingTopBottom(14, 14);
+    @include toRem(width, 227);
+    @include toRem(font-size, 18);
   }
 
   &__iOS {
-    @include toRem(margin-bottom, 18);
+    @include marginBottom(18);
 
     background: $strong-cyan;
     box-shadow: 0px 2px 15px rgba(38, 187, 164, 0.5), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
@@ -21,6 +22,11 @@
     
     &:hover {
       background: $strong-cyan-hover;
+    }
+
+    @media screen and (min-width: 992px) {
+      @include marginBottom(0);
+      @include marginRightLeft(16, 0);
     }
   }
 
