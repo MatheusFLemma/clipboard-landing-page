@@ -76,7 +76,8 @@ a:hover {
 .l-header {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
-  background: url(/src/images/bg-header-mobile.png) no-repeat center top;
+  background: url(/src/images/bg-header-mobile.png) no-repeat top;
+  background-size: cover;
 }
 
 .l-header__logo {
